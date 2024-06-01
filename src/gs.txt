@@ -1,0 +1,69 @@
+class Menu : public CustomLiquidCrystal, public CustomuRTCLib
+{
+public:
+    Menu(const int lcdAddress, const int cols, const int row, const int rtcAddress);
+    void home();
+    void settingDate(int8_t day, int8_t month, int8_t year);
+
+private:
+    void showClock();
+    void showDate();
+};
+
+Menu::Menu(const int lcdAddress, const int cols, const int row, const int rtcAddress) : CustomLiquidCrystal(lcdAddress, cols, row), CustomuRTCLib(rtcAddress)
+{
+}
+
+void Menu::showClock()
+{
+        setCursor(0, 1);
+        print(hour() / 10);
+        print(hour() % 10);
+        print(':');
+        print(minute() / 10);
+        print(minute() % 10);
+        print(':');
+        print(second() / 10);
+        print(second() % 10);
+}
+
+void Menu::showDate()
+{
+    if (dateDataChanged())
+    {
+        setCursor(0, 0);
+        print("Date : ");
+        print(day() / 10);
+        print(day() % 10);
+        print('/');
+        print(month() / 10);
+        print(month() % 10);
+        print('/');
+        print(year() / 10);
+        print(year() % 10);
+    }
+    else
+    {
+        // do nothing
+    }
+}
+
+void Menu::home()
+{
+    refresh();
+    showDate();
+    showClock();
+}
+
+void Menu::settingDate(int8_t day, int8_t month, int8_t year)
+{
+    setCursor(0, 0);
+    print(day / 10);
+    print(day % 10);
+    print("/");
+    print(month / 10);
+    print(month % 10);
+    print("/");
+    print(year / 10);
+    print(year % 10);
+}

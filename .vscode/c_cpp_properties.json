@@ -1,0 +1,70 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/include",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/src",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/rtc",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/uRTCLib/src",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/lcd",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/LiquidCrystal_I2C",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/.pio/libdeps/uno/I2CScanner/src",
+                "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/variants/standard",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/button",
+                "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/.pio/libdeps/uno/LiquidCrystal_I2C",
+                "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/include",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/src",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/rtc",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/uRTCLib/src",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/lcd",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/LiquidCrystal_I2C",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/.pio/libdeps/uno/I2CScanner/src",
+                    "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/variants/standard",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/lib/button",
+                    "/home/yusta_gracceee/Documents/PlatformIO/Projects/jam/.pio/libdeps/uno/LiquidCrystal_I2C",
+                    "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/home/yusta_gracceee/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60115",
+                "ARDUINO_AVR_UNO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "/home/yusta_gracceee/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
